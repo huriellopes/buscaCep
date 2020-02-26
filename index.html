@@ -4,8 +4,97 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Busca de Cep</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
 </head>
 <body>
+    <nav class="navbar has-background-primary" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="">
+                    <span>Busca de CEP</span>
+                </a>
+      
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+    </nav>
     
+    <header class="container">
+        <h1 class="subtitle">Busca de Cep com Via Cep</h1>
+    </header>
+
+    <section class="container">
+        <div class="columns">
+            <div class="column is-one-quarter">
+                <div class="field">
+                    <label for="cep" class="label">CEP</label>
+                    <div class="control">
+                        <input type="text" name="cep" id="cep" class="input" />
+                    </div>
+                </div>
+            </div>
+            <div class="column is-one-quarter">
+                <div class="field">
+                    <label for="logradouro" class="label">Logradouro</label>
+                    <div class="control">
+                        <input type="text" name="logradouro" id="logradouro" class="input" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column is-one-quarter">
+                <div class="field">
+                    <label for="complemento" class="label">Complemento</label>
+                    <div class="control">
+                        <input type="text" name="complemento" id="complemento" class="input" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-one-quarter">
+                <div class="field">
+                    <label for="bairro" class="label">Bairro</label>
+                    <div class="control">
+                        <input type="text" name="bairro" id="bairro" class="input" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column is-one-quarter">
+                <div class="field">
+                    <label for="localidade" class="label">Localidade</label>
+                    <div class="control">
+                        <input type="text" name="localidade" id="localidade" class="input" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-one-quarter">
+                <div class="field">
+                    <label for="UF" class="label">UF</label>
+                    <div class="control">
+                        <input type="text" name="uf" id="UF" class="input" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-one quarter">
+                <button class="button is-success is-light" id="buscar">Buscar</button>
+                <button class="button is-info is-light" id="limpar">limpar</button>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/axios.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
 </body>
 </html>

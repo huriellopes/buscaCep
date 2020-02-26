@@ -44,7 +44,7 @@ gulp.task('js', function () {
 // Servidor para compilar HTML/SCSS
 gulp.task('serve', ['sass'], function () {
     browserSync.init({
-        server: "./"
+        server: "."
     });
 
     gulp.watch(['node_modules/bulma/bulma.sass', 'assets/scss/*.scss'], ['sass']);
